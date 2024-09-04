@@ -1,0 +1,26 @@
+/* The side navigation menu */
+
+:root {
+  --emhs1: #00966c;
+  --emhs2: #68c0a8;
+  --emhs3: #c9e4d8;
+  --emhs4: #e7f6f3;
+  --emhsWhite: #ffffff;
+  --emhsBlack: #000000;
+  --emhsGrey1: #dbdde0;
+  --emhsGrey2: #a8afb6;
+  --emhsGrey3: #5b6770;
+
+  --lightGrey: #e2e5e9;
+}
+
+* {
+  font-family: 'arial';
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 140px;
+  padding: 1px 16px;
+  height: 1000px;
+}
