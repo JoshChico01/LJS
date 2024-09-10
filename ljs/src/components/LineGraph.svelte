@@ -32,7 +32,6 @@ for (let i = 0; i < data[x].length; i++){
 let x_max_coords = (xrange[1] - xrange[0]) / x_factor
 let y_max_coords = (yrange[1] -yrange[0]) / y_factor
 
-console.log(text)
 </script>
 
 
