@@ -1,10 +1,21 @@
 <script>
 
-import Sidebar from "../../components/Sidebar.svelte"
+    import Sidebar from "../../components/Sidebar.svelte"
 
-import Passport from "../../svg/Passport.svelte"
+
+    let htmlContent = '';
+
+  // Fetch the HTML content
+  fetch('src/graphs/graphs/graph.html')
+    .then(response => response.text())
+    .then(html => {
+      htmlContent = html;
+    });
+
 </script>
 
 <Sidebar active="network"/>
 
-<Passport />
+<div>
+    {@html htmlContent}
+</div>

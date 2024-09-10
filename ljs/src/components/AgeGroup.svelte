@@ -89,6 +89,10 @@
     <div style="font-size:18px; margin-right:6px">Death chance: </div><input class="death_prob" bind:value={age_group["death"]}/>
   </div>
 
+  
+  <div class="hr"/>
+
+
   <div class="line" style="height:100px">
     <div class="event"> <Passport /><input class="prob"     bind:value={age_group["events"]["passport"]}/></div>
     <div class="event"> <Hospital /><input class="prob"     bind:value={age_group["events"]["hospital"]}/></div>
