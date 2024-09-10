@@ -4,6 +4,7 @@ import Sidebar from "../../components/Sidebar.svelte"
 
 import LineGraph from "../../components/LineGraph.svelte"
 import Slider from "../../components/Slider.svelte";
+//import BarGraph from "../../components/BarGraph.svelte";
 
 import data from "../../data/data.json"
 
@@ -37,6 +38,7 @@ let year_selected = 2000
 
 
 <h1>{year_selected}</h1>
+<!--<BarGraph />-->
 
 
 
