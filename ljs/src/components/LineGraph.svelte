@@ -40,7 +40,7 @@ let y_max_coords = (yrange[1] -yrange[0]) / y_factor
 
 
 <div>
-<div style="margin-bottom:20px">{title}</div>
+<h2 style="margin-bottom:20px;margin-top:0px;padding-top:20px ">{title}</h2>
 <svg width={x_max_coords} height={y_max_coords} style="margin:0">
 	<!-- x axis -->
 	<line x1={0} x2={x_max_coords} y1={y_max_coords} y2={y_max_coords}></line>

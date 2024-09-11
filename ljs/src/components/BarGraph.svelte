@@ -29,6 +29,18 @@
         }
     }
 
+    let bin_keys = Object.keys(bin_dict)
+
+    for (let key of bin_keys){
+        bin_dict[key] = bin_dict[key].length
+    }
+
     console.log("Populated bin_dict:", bin_dict);
+
+    
 </script>
 
+
+<div>
+    Hello World!
+</div>

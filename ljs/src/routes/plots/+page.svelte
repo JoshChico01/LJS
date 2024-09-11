@@ -1,15 +1,21 @@
 <script>
 
-import Sidebar from "../../components/Sidebar.svelte"
+    import Sidebar from "../../components/Sidebar.svelte"
 
-import LineGraph from "../../components/LineGraph.svelte"
-import Slider from "../../components/Slider.svelte";
-//import BarGraph from "../../components/BarGraph.svelte";
+    import LineGraph from "../../components/LineGraph.svelte"
+    import Slider from "../../components/Slider.svelte";
+    import BarGraph from "../../components/BarGraphV2.svelte";
 
-import data from "../../data/data.json"
+    import data from "../../data/data.json"
 
 
-let year_selected = 2000
+    let year_selected = 2000
+
+
+
+    $: ages = data["Ages"][year_selected - 2000]
+
+    $: console.log(ages)
 
 </script>
 
@@ -32,13 +38,17 @@ let year_selected = 2000
 
 <div class="hr"/>
 
-<div style="width:80%">
-<Slider on:change={(e) => year_selected = e.detail.value} min={2000} max={2499} id="slider-for-barplot"/>
+
+<h2>Population Age Distribution Overtime</h2>
+<div style="width:1000px">
+<Slider on:change={(e) => year_selected = e.detail.value} min={2000} max={2249} id="slider-for-barplot"/>
 </div>
 
 
-<h1>{year_selected}</h1>
-<!--<BarGraph />-->
+<h3>Year: {year_selected}</h3>
+<BarGraph bind:ages={ages}/>
+
+
 
 
 
